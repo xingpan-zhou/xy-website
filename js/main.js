@@ -503,4 +503,82 @@ class PerformanceOptimizedWebsite {
         // 监控布局偏移
         if ('PerformanceObserver' in window) {
             try {
-               
+                let cls = 0;
+                const observer = new PerformanceObserver((list) => {
+                    for (const entry of list.getEntries()) {
+                        if (!entry.hadRecentInput) {
+                            cls += entry.value;
+                            console.log('📐 布局偏移:', entry);
+                        }
+                    }
+                });
+                
+                observer.observe({ type: 'layout-shift', buffered: true });
+            } catch (e) {
+                console.log('布局偏移监控不可用');
+            }
+        }
+    }
+
+    // 17. 错误处理
+    setupErrorHandling() {
+        // 全局错误捕获
+        window.addEventListener('error', (event) => {
+            console.error('❌ JavaScript错误:', event.error);
+            
+            // 可以发送错误到监控服务
+            if (typeof Sentry !== 'undefined') {
+                Sentry.captureException(event.error);
+            }
+        });
+        
+        // 未处理的Promise rejection
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('❌ 未处理的Promise rejection:', event.reason);
+        });
+    }
+}
+
+// 18. 页面加载优化
+document.addEventListener('DOMContentLoaded', () => {
+    // 隐藏骨架屏
+    const skeleton = document.getElementById('skeleton');
+    if (skeleton) {
+        setTimeout(() => {
+            skeleton.style.opacity = '0';
+            skeleton.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                skeleton.style.display = 'none';
+            }, 500);
+        }, 1000);
+    }
+    
+    // 初始化网站
+    setTimeout(() => {
+        new PerformanceOptimizedWebsite();
+    }, 100);
+});
+
+// 19. 服务Worker注册（可选）
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+    });
+}
+
+// 20. 离线检测
+window.addEventListener('online', () => {
+    console.log('✅ 网络已连接');
+});
+
+window.addEventListener('offline', () => {
+    console.log('⚠️ 网络已断开');
+    const website = new PerformanceOptimizedWebsite();
+    website.showNotification('网络连接已断开，部分功能可能不可用', 'error');
+});
+
+// 导出类以便其他脚本使用
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = PerformanceOptimizedWebsite;
+}
