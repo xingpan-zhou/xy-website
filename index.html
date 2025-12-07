@@ -11,13 +11,10 @@
     <meta name="theme-color" content="#2563eb">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>周星盘 | Web开发者 & 技术博主</title>
-    <meta name="description" content="周星盘的个人网站，专注于Web开发、自动化部署和前端技术分享。">
-    <meta name="keywords" content="Web开发,前端开发,自动化部署,JavaScript,React,Vue,周星盘">
-    <meta name="author" content="周星盘">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>周兴攀 | Web开发者 & 技术博主</title>
+    <meta name="description" content="周兴攀的个人网站，专注于Web开发、自动化部署和前端技术分享。">
+    <meta name="keywords" content="Web开发,前端开发,自动化部署,JavaScript,React,Vue,周兴攀">
+    <meta name="author" content="周兴攀">
     
     <!-- 样式文件 -->
     <link rel="stylesheet" href="./css/style.css">
@@ -33,7 +30,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "周星盘",
+      "name": "周兴攀",
       "url": "https://xingpan-zhou.github.io/Xy-website",
       "jobTitle": "Web开发者",
       "skills": "JavaScript, React, Vue, Node.js, Git, 自动化部署",
@@ -48,7 +45,7 @@
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">周星盘<span class="dot">.</span></a>
+            <a href="#" class="logo">周兴攀<span class="dot">.</span></a>
             
             <button class="menu-toggle" aria-label="切换菜单">
                 <span class="bar"></span>
@@ -71,7 +68,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    你好，我是 <span class="highlight">周星盘</span>
+                    你好，我是 <span class="highlight">周兴攀</span>
                 </h1>
                 <h2 class="hero-subtitle">Web开发者 & 技术爱好者</h2>
                 <p class="hero-description">
@@ -81,12 +78,22 @@
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">查看项目</a>
                     <a href="#contact" class="btn btn-secondary">联系我</a>
+                    <a href="https://github.com/xingpan-zhou" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
+                <div class="profile-avatar">
                     <i class="fas fa-user-circle"></i>
-                    <!-- 替换为您的头像：<img src="./images/profile.jpg" alt="周星盘"> -->
+                    <!-- 替换为您的头像：<img src="./images/profile.jpg" alt="周兴攀"> -->
+                </div>
+                <div class="hero-tech-stack">
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Vue</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">自动化部署</span>
                 </div>
             </div>
         </div>
@@ -102,19 +109,48 @@
                     <p>我毕业于计算机科学专业，拥有 3 年以上的 Web 开发经验，擅长使用现代前端技术栈构建响应式、高性能的网站和应用程序。</p>
                     <p>我对自动化部署、持续集成/持续部署(CI/CD)和开发者工具特别感兴趣，致力于优化开发流程和提升团队效率。</p>
                     <p>除了编码，我喜欢分享技术知识，撰写博客，并参与开源项目。</p>
+                    
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">与我合作</a>
+                        <a href="#projects" class="btn btn-outline">查看项目</a>
+                    </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">项目完成</span>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">项目完成</span>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">年经验</span>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">年经验</span>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">客户满意度</span>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">客户满意度</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">开源贡献</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,35 +163,119 @@
             <h2 class="section-title">技术栈</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> 前端技术</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>前端技术</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React & Vue.js</li>
-                        <li>TypeScript</li>
-                        <li>响应式设计</li>
+                        <li>
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">React & Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">响应式设计</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> 后端 & 工具</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>后端 & 工具</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Git & GitHub</li>
-                        <li>Webpack & Vite</li>
-                        <li>Docker</li>
+                        <li>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Webpack & Vite</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-cloud-upload-alt"></i> 部署 & DevOps</h3>
+                    <div class="skill-header">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>部署 & DevOps</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>GitHub Pages</li>
-                        <li>Vercel / Netlify</li>
-                        <li>CI/CD 流水线</li>
-                        <li>自动化测试</li>
-                        <li>Linux 服务器</li>
+                        <li>
+                            <span class="skill-name">GitHub Pages</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Vercel / Netlify</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">CI/CD 流水线</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">自动化测试</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Linux 服务器</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 78%"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -169,55 +289,96 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-laptop-code"></i>
+                        <div class="project-badge">热门</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/xingpan-zhou/auto-deploy-platform" target="_blank" class="project-preview-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3>自动化部署平台</h3>
-                        <p>基于 GitHub Actions 的自动化部署系统，支持多环境配置和自动测试。</p>
+                        <p>基于 GitHub Actions 的自动化部署系统，支持多环境配置、自动测试和监控告警，提升部署效率300%。</p>
                         <div class="project-tech">
-                            <span>GitHub Actions</span>
-                            <span>Node.js</span>
-                            <span>Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">CI/CD</span>
                         </div>
-                        <a href="#" class="project-link">查看详情</a>
+                        <div class="project-links">
+                            <a href="https://github.com/xingpan-zhou/auto-deploy-platform" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> 代码
+                            </a>
+                            <a href="https://deploy-demo.xingpan.dev" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> 演示
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="image-placeholder">
+                        <div class="project-badge">最新</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/xingpan-zhou/data-dashboard" target="_blank" class="project-preview-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3>数据可视化面板</h3>
-                        <p>使用 React 和 D3.js 构建的实时数据可视化仪表板。</p>
+                        <p>使用 React 和 D3.js 构建的实时数据可视化仪表板，支持自定义图表、数据导出和实时更新。</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>D3.js</span>
-                            <span>TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">WebSocket</span>
                         </div>
-                        <a href="#" class="project-link">查看详情</a>
+                        <div class="project-links">
+                            <a href="https://github.com/xingpan-zhou/data-dashboard" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> 代码
+                            </a>
+                            <a href="https://dashboard-demo.xingpan.dev" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> 演示
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
+                        <div class="project-overlay">
+                            <a href="https://github.com/xingpan-zhou/ecommerce-pwa" target="_blank" class="project-preview-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3>移动端电商应用</h3>
-                        <p>基于 Vue.js 的 PWA 电商应用，支持离线访问和推送通知。</p>
+                        <p>基于 Vue.js 的 PWA 电商应用，支持离线访问、推送通知和渐进式增强，提升用户体验。</p>
                         <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>PWA</span>
-                            <span>Firebase</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Vite</span>
                         </div>
-                        <a href="#" class="project-link">查看详情</a>
+                        <div class="project-links">
+                            <a href="https://github.com/xingpan-zhou/ecommerce-pwa" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> 代码
+                            </a>
+                            <a href="https://ecommerce-demo.xingpan.dev" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> 演示
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,53 +391,87 @@
             <h2 class="section-title">联系我</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>如果您有项目合作、技术咨询或只是想聊聊，欢迎联系我！</p>
+                    <p class="contact-intro">如果您有项目合作、技术咨询或只是想聊聊，欢迎联系我！</p>
                     
                     <div class="contact-items">
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
                                 <h4>邮箱</h4>
-                                <p>contact@example.com</p>
+                                <a href="mailto:3376196648@qq.com">3376196648@qq.com</a>
                             </div>
                         </div>
                         
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
                                 <h4>地址</h4>
-                                <p>中国 · 北京</p>
+                                <p>中国 · 重庆</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>微信</h4>
+                                <p>Zhou_XingPan (添加请备注)</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="social-links">
-                        <a href="https://github.com/xingpan-zhou" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://gitee.com/xingpan-zhou" target="_blank" class="social-link">
-                            <i class="fab fa-gitlab"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-weixin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+                        <h4>关注我</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/xingpan-zhou" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://gitee.com/xingpan-zhou" target="_blank" class="social-link" title="Gitee">
+                                <i class="fab fa-gitlab"></i>
+                            </a>
+                            <a href="#" class="social-link" title="微信">
+                                <i class="fab fa-weixin"></i>
+                            </a>
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" title="技术博客">
+                                <i class="fas fa-blog"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <form class="contact-form">
+                <form id="contactForm" class="contact-form">
+                    <h3>发送消息</h3>
                     <div class="form-group">
-                        <input type="text" placeholder="您的姓名" required>
+                        <label for="name">姓名 *</label>
+                        <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="邮箱地址" required>
+                        <label for="email">邮箱 *</label>
+                        <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="留言内容..." rows="5" required></textarea>
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" name="subject" placeholder="请简要说明您的需求">
                     </div>
-                    <button type="submit" class="btn btn-primary">发送消息</button>
+                    <div class="form-group">
+                        <label for="message">消息内容 *</label>
+                        <textarea id="message" name="message" placeholder="请详细描述您的项目或问题..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">发送消息</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> 发送中...
+                        </span>
+                    </button>
+                    <p class="form-note">* 为必填项，我们会在24小时内回复您</p>
                 </form>
             </div>
         </div>
@@ -285,18 +480,50 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 周星盘. 保留所有权利.</p>
-            <p>本网站使用 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> 托管</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo">周兴攀<span class="dot">.</span></a>
+                    <p>专注于现代化的 Web 开发与自动化部署</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我</a></li>
+                        <li><a href="#skills">技术栈</a></li>
+                        <li><a href="#projects">项目</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>联系方式</h4>
+                    <p><i class="fas fa-envelope"></i> 3376196648@qq.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 中国 · 重庆</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 周兴攀. 保留所有权利. 本网站使用 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> 托管</p>
+                <div class="footer-social">
+                    <a href="https://github.com/xingpan-zhou" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://gitee.com/xingpan-zhou" target="_blank">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- 返回顶部按钮 -->
-    <button id="back-to-top" class="back-to-top">
+    <button id="back-to-top" class="back-to-top" aria-label="返回顶部">
         <i class="fas fa-chevron-up"></i>
     </button>
 
     <!-- JavaScript -->
     <script src="./js/main.js"></script>
 </body>
-
 </html>
